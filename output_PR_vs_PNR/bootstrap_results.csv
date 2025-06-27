@@ -1,0 +1,4 @@
+"Variable1","Variable2","Spearman_rho","CI_lower_Norm","CI_upper_Norm","p_value"
+"Age","PNE",-0.328,-0.577,-0.082,0.00864
+"Prevotella_spp_qPCR_copies","Delta_bilirubin",-0.39,-0.673,-0.118,0.00393
+"Serum_DCA","Delta_bilirubin",-0.284,-0.526,-0.046,0.048
