@@ -39,9 +39,9 @@ rm Trimmomatic-0.39.zip
 
 # Download and prepare the MetaPhlAn merging script
 
-curl -L -o ./Scripts/merge_metaphlan_tables_abs.txt https://forum.biobakery.org/uploads/short-url/3PBFnEdw1MuvQDuSh7kx9uSViGp.txt
+curl -L -o ./scripts/merge_metaphlan_tables_abs.txt https://forum.biobakery.org/uploads/short-url/3PBFnEdw1MuvQDuSh7kx9uSViGp.txt
 
-mv Scripts/merge_metaphlan_tables_abs.txt Scripts/merge_metaphlan_tables_abs.py
+mv scripts/merge_metaphlan_tables_abs.txt scripts/merge_metaphlan_tables_abs.py
 
-chmod +x Scripts/merge_metaphlan_tables_abs.py
+chmod +x scripts/merge_metaphlan_tables_abs.py
 
