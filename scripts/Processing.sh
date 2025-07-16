@@ -1,16 +1,13 @@
 #!/bin/bash
  # Be sure to have placed the .fastq.gz files in the current folder 
- mkdir -p ./Read_counts
- 
- source "$(conda info --base)/etc/profile.d/conda.sh"
- 
- conda init
+
+
+ source "$(conda info --base)/etc/profile.d/conda.sh" 
  conda activate metagenomics_env
+
 # Merge the files from different lanes 
 
-
 samples=$(ls reads/*.fastq.gz | xargs -n1 basename | awk -F'_S' '{print $1}' | sort -u)
-
 
 for sample in $samples; do
     echo "$(date '+%Y-%m-%d %H:%M:%S') - Starting concatenation for ${sample}"
@@ -26,7 +23,6 @@ for sample in $samples; do
 
     echo "$(date '+%Y-%m-%d %H:%M:%S') - Finished merging files for ${sample}"
 done
-
 
 # Decompress
 for sample in reads/*.gz; do
@@ -48,7 +44,7 @@ for sample in $samples; do
         --reference-db ./human_genome \
         --output "${sample}" \
         --trimmomatic ./Trimmomatic-0.39 \
-        --trf "$TRF_Dir" \
+        --trf "$TRF_DIR" \
         --threads 10
 
     echo "$(date '+%Y-%m-%d %H:%M:%S') - Finished Kneaddata for ${sample} ; formatting the output in a single file"
@@ -58,20 +54,17 @@ for sample in $samples; do
     echo "$(date '+%Y-%m-%d %H:%M:%S') - Finished merging the files, removing the intermediary folder"
 
 rm -r "${sample}"
-
-
 done
 
-for file in reads/*.fastq; do
+mkdir -p ./Read_counts 
+
+for file in *.fastq; do
     count=$(grep -c "^@" "$file")
     filename=$(basename "$file" .fastq)
     echo "$filename: $count" >> Read_counts/read_counts.txt
 done
 
-
-
-
-# Application de la fonction Metaphlan pour obtenir des tables d'abondance
+# MetaPhlan call 
 
 for i in *fastq; do 
     echo "$(date '+%Y-%m-%d %H:%M:%S') - Starting MetaPhlAn for ${i}"
@@ -79,7 +72,7 @@ for i in *fastq; do
     echo "$(date '+%Y-%m-%d %H:%M:%S') - Finished MetaPhlAn for ${i}"
     done
 
-# Fusion des différents fichiers pour obtenir une table unique.
+# MetaPhlAn merging
     echo "$(date '+%Y-%m-%d %H:%M:%S') - All MetaPhlAn done, merging the outputs"
 
 rm *bowtie2*

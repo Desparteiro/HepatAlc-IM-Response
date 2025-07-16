@@ -10,11 +10,11 @@ The first section starts using the 53 raw .fastq.gz files that were obtained usi
 
 Script 1 (Preprocessing.sh)
 
-Using a first "Preprocessing.sh" script, the conda environment is prepared for the KneadData + MetaPhlAn pipeline, and may require a few hours due to the downloading of the large MetaPhlAn database. After that first script, the sequencing files can be placed in the "reads/" folder and the second script can be used. To facilitate testing, two example .fastq.gz files from the BB.036 sample are included in the "reads/" folder.
+Using a first "Preprocessing.sh" script, the conda environment is prepared for the KneadData + MetaPhlAn pipeline, and may require a few hours due to the downloading of the large MetaPhlAn database. After that first script, the sequencing files can be placed in the "reads/" folder and the second script can be used. 
 
 Script 2 (Processing.sh)
 
-This second script requires the fastq.gz files to be downloaded and placed in the "reads/" folder. The sequences are merged, decompressed, filtered using KneadData, aligned using MetaPhlAn, and the resulting tables are merged together in an output that can then be imported in R. 
+This second script requires the fastq.gz files to be downloaded and placed in the "reads/" folder. The sequences are merged, decompressed, filtered using KneadData, aligned using MetaPhlAn, and the resulting tables are merged together in an output that can then be imported in R. To facilitate testing, four example .fastq.gz are included in the "reads/" folder.
 
 Section 2 (R scripts, Linux or Windows)
 

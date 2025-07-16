@@ -1,7 +1,6 @@
 #!/bin/bash
 set -e
-# This script sets up a conda environment for metagenomics preprocessing
-# with metaphlan v4.0.1 and kneaddata v0.12.2. The whole script takes several hours, mainly due to MetaPhlAn database installation.
+#The whole script takes several hours, mainly due to MetaPhlAn database installation.
 
 # Ensure conda environment is available
 source "$(conda info --base)/etc/profile.d/conda.sh"
@@ -12,7 +11,6 @@ mkdir -p human_genome metaphlan_database
 
 # Create a new conda environment
 conda create --name metagenomics_env -y -c bioconda python=3.7
-conda init
 conda activate metagenomics_env
 
 # Install core packages
@@ -26,7 +24,6 @@ unzip Trimmomatic-0.39.zip
 # Download the human genome database for kneaddata
 echo "$(date '+%Y-%m-%d %H:%M:%S') - Downloading the human genome"
 wget http://huttenhower.sph.harvard.edu/kneadData_databases/Homo_sapiens_hg37_and_human_contamination_Bowtie2_v0.1.tar.gz -O hg37.tar.gz
-mkdir -p human_genome
 tar -xvzf hg37.tar.gz -C human_genome
 
 # Download the MetaPhlAn database
