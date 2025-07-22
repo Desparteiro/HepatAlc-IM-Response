@@ -646,8 +646,6 @@ if ("Response" %in% comparisons) {
     plot_bray_by_Response,
     plot_average_stacked_Phylum_by_Response,
     plot_average_stacked_Genus_by_Response,
-    plot_Prevotella_by_Response,
-    s__Prevotella_copri_clade_A,
     plot_Prevotella_spp_qPCR_copies_by_Response,
     plot_Prevotella_copri_qPCR_copies_by_Response,
     ncol = 2,
@@ -657,7 +655,7 @@ if ("Response" %in% comparisons) {
   
   Cairo::Cairo(
     26,
-    60,
+    40,
     file = paste0(output_folder, "final_plots/Figure 1", ".tif"),
     type = "tif",
     bg = "white",

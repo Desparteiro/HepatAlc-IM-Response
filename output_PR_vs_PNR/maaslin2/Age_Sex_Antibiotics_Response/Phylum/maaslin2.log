@@ -1,58 +1,58 @@
-2025-07-16 11:20:56.72928 INFO::Writing function arguments to log file
-2025-07-16 11:20:56.740659 DEBUG::Function arguments
-2025-07-16 11:20:56.745706 DEBUG::Output folder: G:/Autres ordinateurs/Mon ordinateur/Thèse 2021/Thèse/Résultats/Séquençage/Traité/Script final/GM_Response/output_PR_vs_PNR/maaslin2/Age_Sex_Antibiotics_Response/Phylum
-2025-07-16 11:20:56.750496 DEBUG::Min Abundance: 0.000000
-2025-07-16 11:20:56.755588 DEBUG::Min Prevalence: 0.100000
-2025-07-16 11:20:56.760547 DEBUG::Normalization: TSS
-2025-07-16 11:20:56.765315 DEBUG::Transform: LOG
-2025-07-16 11:20:56.77006 DEBUG::Analysis method: LM
-2025-07-16 11:20:56.775124 DEBUG::Max significance: 0.050000
-2025-07-16 11:20:56.781035 DEBUG::Random effects:
-2025-07-16 11:20:56.78599 DEBUG::Fixed effects: Age,Sex,Antibiotics,Response
-2025-07-16 11:20:56.790698 DEBUG::Correction method: BH
-2025-07-16 11:20:56.795591 DEBUG::Standardize: TRUE
-2025-07-16 11:20:56.800257 DEBUG::Cores: 1
-2025-07-16 11:20:56.804809 INFO::Verifying options selected are valid
-2025-07-16 11:20:56.809817 INFO::Determining format of input files
-2025-07-16 11:20:56.815091 INFO::Input format is data samples as columns and metadata samples as rows
-2025-07-16 11:20:56.820867 DEBUG::Transformed data so samples are rows
-2025-07-16 11:20:56.83451 DEBUG::The following samples were found to have metadata but no features. They will be removed. BB.058,BB.061,BB.062,BB.063,BB.064,BB.117,BB.128,BB.129,BB.131,BB.135
-2025-07-16 11:20:56.841968 DEBUG::A total of 53 samples were found in both the data and metadata
-2025-07-16 11:20:56.847023 DEBUG::Reordering data/metadata to use same sample ordering
-2025-07-16 11:20:56.8527 WARNING::Feature name not found in metadata so not applied to formula as fixed effect: Sex
-2025-07-16 11:20:56.858361 INFO::Formula for fixed effects: expr ~  Age + Antibiotics + Response
-2025-07-16 11:20:56.864106 INFO::Filter data based on min abundance and min prevalence
-2025-07-16 11:20:56.869675 INFO::Total samples in data: 53
-2025-07-16 11:20:56.875391 INFO::Min samples required with min abundance for a feature not to be filtered: 5.300000
-2025-07-16 11:20:56.880901 INFO::Total filtered features: 8
-2025-07-16 11:20:56.886491 INFO::Filtered feature names from abundance and prevalence filtering: p__Candidatus_Gracilibacteria, p__Candidatus_Melainabacteria, p__Lentisphaerae, p__Planctomycetes, p__Spirochaetes, p__Synergistetes, p__Tenericutes, p__Ascomycota
-2025-07-16 11:20:56.891895 INFO::Total filtered features with variance filtering: 0
-2025-07-16 11:20:56.897068 INFO::Filtered feature names from variance filtering:
-2025-07-16 11:20:56.902593 INFO::Running selected normalization method: TSS
-2025-07-16 11:20:56.908184 INFO::Applying z-score to standardize continuous metadata
-2025-07-16 11:20:56.916395 INFO::Running selected transform method: LOG
-2025-07-16 11:20:56.922855 INFO::Running selected analysis method: LM
-2025-07-16 11:20:56.928184 INFO::Fitting model to feature number 1, p__Euryarchaeota
-2025-07-16 11:20:56.935515 INFO::Fitting model to feature number 2, p__Actinobacteria
-2025-07-16 11:20:56.943252 INFO::Fitting model to feature number 3, p__Bacteroidetes
-2025-07-16 11:20:56.95112 INFO::Fitting model to feature number 4, p__Candidatus_Saccharibacteria
-2025-07-16 11:20:56.958634 INFO::Fitting model to feature number 5, p__Firmicutes
-2025-07-16 11:20:56.966649 INFO::Fitting model to feature number 6, p__Fusobacteria
-2025-07-16 11:20:56.974286 INFO::Fitting model to feature number 7, p__Proteobacteria
-2025-07-16 11:20:56.982627 INFO::Fitting model to feature number 8, p__Verrucomicrobia
-2025-07-16 11:20:56.993029 INFO::Counting total values for each feature
-2025-07-16 11:20:57.006786 INFO::Writing filtered data to file G:/Autres ordinateurs/Mon ordinateur/Thèse 2021/Thèse/Résultats/Séquençage/Traité/Script final/GM_Response/output_PR_vs_PNR/maaslin2/Age_Sex_Antibiotics_Response/Phylum/features/filtered_data.tsv
-2025-07-16 11:20:57.025175 INFO::Writing filtered, normalized data to file G:/Autres ordinateurs/Mon ordinateur/Thèse 2021/Thèse/Résultats/Séquençage/Traité/Script final/GM_Response/output_PR_vs_PNR/maaslin2/Age_Sex_Antibiotics_Response/Phylum/features/filtered_data_norm.tsv
-2025-07-16 11:20:57.044533 INFO::Writing filtered, normalized, transformed data to file G:/Autres ordinateurs/Mon ordinateur/Thèse 2021/Thèse/Résultats/Séquençage/Traité/Script final/GM_Response/output_PR_vs_PNR/maaslin2/Age_Sex_Antibiotics_Response/Phylum/features/filtered_data_norm_transformed.tsv
-2025-07-16 11:20:57.066152 INFO::Writing residuals to file G:/Autres ordinateurs/Mon ordinateur/Thèse 2021/Thèse/Résultats/Séquençage/Traité/Script final/GM_Response/output_PR_vs_PNR/maaslin2/Age_Sex_Antibiotics_Response/Phylum/fits/residuals.rds
-2025-07-16 11:20:57.085056 INFO::Writing fitted values to file G:/Autres ordinateurs/Mon ordinateur/Thèse 2021/Thèse/Résultats/Séquençage/Traité/Script final/GM_Response/output_PR_vs_PNR/maaslin2/Age_Sex_Antibiotics_Response/Phylum/fits/fitted.rds
-2025-07-16 11:20:57.10338 INFO::Writing all results to file (ordered by increasing q-values): G:/Autres ordinateurs/Mon ordinateur/Thèse 2021/Thèse/Résultats/Séquençage/Traité/Script final/GM_Response/output_PR_vs_PNR/maaslin2/Age_Sex_Antibiotics_Response/Phylum/all_results.tsv
-2025-07-16 11:20:57.121236 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.050000 ) to file (ordered by increasing q-values): G:/Autres ordinateurs/Mon ordinateur/Thèse 2021/Thèse/Résultats/Séquençage/Traité/Script final/GM_Response/output_PR_vs_PNR/maaslin2/Age_Sex_Antibiotics_Response/Phylum/significant_results.tsv
-2025-07-16 11:20:57.138489 INFO::Writing heatmap of significant results to file: G:/Autres ordinateurs/Mon ordinateur/Thèse 2021/Thèse/Résultats/Séquençage/Traité/Script final/GM_Response/output_PR_vs_PNR/maaslin2/Age_Sex_Antibiotics_Response/Phylum/heatmap.pdf
-2025-07-16 11:20:57.252522 INFO::Writing association plots (one for each significant association) to output folder: G:/Autres ordinateurs/Mon ordinateur/Thèse 2021/Thèse/Résultats/Séquençage/Traité/Script final/GM_Response/output_PR_vs_PNR/maaslin2/Age_Sex_Antibiotics_Response/Phylum
-2025-07-16 11:20:57.265542 INFO::Plotting associations from most to least significant, grouped by metadata
-2025-07-16 11:20:57.271978 INFO::Plotting data for metadata number 1, Antibiotics
-2025-07-16 11:20:57.283471 INFO::Creating boxplot for categorical data, Antibiotics vs p__Bacteroidetes
-2025-07-16 11:20:57.408834 INFO::Creating boxplot for categorical data, Antibiotics vs p__Actinobacteria
-2025-07-16 11:20:57.867156 INFO::Plotting data for metadata number 2, Age
-2025-07-16 11:20:57.87914 INFO::Creating scatter plot for continuous data, Age vs p__Verrucomicrobia
+2025-07-22 14:08:35.487146 INFO::Writing function arguments to log file
+2025-07-22 14:08:35.496761 DEBUG::Function arguments
+2025-07-22 14:08:35.501357 DEBUG::Output folder: G:/Autres ordinateurs/Mon ordinateur/Thèse 2021/Thèse/Résultats/Séquençage/Traité/Script final/GM_Response/output_PR_vs_PNR/maaslin2/Age_Sex_Antibiotics_Response/Phylum
+2025-07-22 14:08:35.505982 DEBUG::Min Abundance: 0.000000
+2025-07-22 14:08:35.51039 DEBUG::Min Prevalence: 0.100000
+2025-07-22 14:08:35.515 DEBUG::Normalization: TSS
+2025-07-22 14:08:35.519331 DEBUG::Transform: LOG
+2025-07-22 14:08:35.523593 DEBUG::Analysis method: LM
+2025-07-22 14:08:35.527903 DEBUG::Max significance: 0.050000
+2025-07-22 14:08:35.53245 DEBUG::Random effects:
+2025-07-22 14:08:35.537789 DEBUG::Fixed effects: Age,Sex,Antibiotics,Response
+2025-07-22 14:08:35.550793 DEBUG::Correction method: BH
+2025-07-22 14:08:35.555314 DEBUG::Standardize: TRUE
+2025-07-22 14:08:35.559957 DEBUG::Cores: 1
+2025-07-22 14:08:35.56455 INFO::Verifying options selected are valid
+2025-07-22 14:08:35.569487 INFO::Determining format of input files
+2025-07-22 14:08:35.574302 INFO::Input format is data samples as columns and metadata samples as rows
+2025-07-22 14:08:35.580396 DEBUG::Transformed data so samples are rows
+2025-07-22 14:08:35.585374 DEBUG::The following samples were found to have metadata but no features. They will be removed. BB.058,BB.061,BB.062,BB.063,BB.064,BB.117,BB.128,BB.129,BB.131,BB.135
+2025-07-22 14:08:35.589835 DEBUG::A total of 53 samples were found in both the data and metadata
+2025-07-22 14:08:35.594138 DEBUG::Reordering data/metadata to use same sample ordering
+2025-07-22 14:08:35.599405 WARNING::Feature name not found in metadata so not applied to formula as fixed effect: Sex
+2025-07-22 14:08:35.604618 INFO::Formula for fixed effects: expr ~  Age + Antibiotics + Response
+2025-07-22 14:08:35.609888 INFO::Filter data based on min abundance and min prevalence
+2025-07-22 14:08:35.614876 INFO::Total samples in data: 53
+2025-07-22 14:08:35.619671 INFO::Min samples required with min abundance for a feature not to be filtered: 5.300000
+2025-07-22 14:08:35.62473 INFO::Total filtered features: 8
+2025-07-22 14:08:35.629742 INFO::Filtered feature names from abundance and prevalence filtering: p__Candidatus_Gracilibacteria, p__Candidatus_Melainabacteria, p__Lentisphaerae, p__Planctomycetes, p__Spirochaetes, p__Synergistetes, p__Tenericutes, p__Ascomycota
+2025-07-22 14:08:35.635055 INFO::Total filtered features with variance filtering: 0
+2025-07-22 14:08:35.640672 INFO::Filtered feature names from variance filtering:
+2025-07-22 14:08:35.645515 INFO::Running selected normalization method: TSS
+2025-07-22 14:08:35.650862 INFO::Applying z-score to standardize continuous metadata
+2025-07-22 14:08:35.658737 INFO::Running selected transform method: LOG
+2025-07-22 14:08:35.664101 INFO::Running selected analysis method: LM
+2025-07-22 14:08:35.668988 INFO::Fitting model to feature number 1, p__Euryarchaeota
+2025-07-22 14:08:35.675985 INFO::Fitting model to feature number 2, p__Actinobacteria
+2025-07-22 14:08:35.690459 INFO::Fitting model to feature number 3, p__Bacteroidetes
+2025-07-22 14:08:35.69781 INFO::Fitting model to feature number 4, p__Candidatus_Saccharibacteria
+2025-07-22 14:08:35.706011 INFO::Fitting model to feature number 5, p__Firmicutes
+2025-07-22 14:08:35.713904 INFO::Fitting model to feature number 6, p__Fusobacteria
+2025-07-22 14:08:35.723482 INFO::Fitting model to feature number 7, p__Proteobacteria
+2025-07-22 14:08:35.730734 INFO::Fitting model to feature number 8, p__Verrucomicrobia
+2025-07-22 14:08:35.74069 INFO::Counting total values for each feature
+2025-07-22 14:08:35.747593 INFO::Writing filtered data to file G:/Autres ordinateurs/Mon ordinateur/Thèse 2021/Thèse/Résultats/Séquençage/Traité/Script final/GM_Response/output_PR_vs_PNR/maaslin2/Age_Sex_Antibiotics_Response/Phylum/features/filtered_data.tsv
+2025-07-22 14:08:35.762851 INFO::Writing filtered, normalized data to file G:/Autres ordinateurs/Mon ordinateur/Thèse 2021/Thèse/Résultats/Séquençage/Traité/Script final/GM_Response/output_PR_vs_PNR/maaslin2/Age_Sex_Antibiotics_Response/Phylum/features/filtered_data_norm.tsv
+2025-07-22 14:08:35.779549 INFO::Writing filtered, normalized, transformed data to file G:/Autres ordinateurs/Mon ordinateur/Thèse 2021/Thèse/Résultats/Séquençage/Traité/Script final/GM_Response/output_PR_vs_PNR/maaslin2/Age_Sex_Antibiotics_Response/Phylum/features/filtered_data_norm_transformed.tsv
+2025-07-22 14:08:35.797489 INFO::Writing residuals to file G:/Autres ordinateurs/Mon ordinateur/Thèse 2021/Thèse/Résultats/Séquençage/Traité/Script final/GM_Response/output_PR_vs_PNR/maaslin2/Age_Sex_Antibiotics_Response/Phylum/fits/residuals.rds
+2025-07-22 14:08:35.814171 INFO::Writing fitted values to file G:/Autres ordinateurs/Mon ordinateur/Thèse 2021/Thèse/Résultats/Séquençage/Traité/Script final/GM_Response/output_PR_vs_PNR/maaslin2/Age_Sex_Antibiotics_Response/Phylum/fits/fitted.rds
+2025-07-22 14:08:35.837693 INFO::Writing all results to file (ordered by increasing q-values): G:/Autres ordinateurs/Mon ordinateur/Thèse 2021/Thèse/Résultats/Séquençage/Traité/Script final/GM_Response/output_PR_vs_PNR/maaslin2/Age_Sex_Antibiotics_Response/Phylum/all_results.tsv
+2025-07-22 14:08:35.87557 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.050000 ) to file (ordered by increasing q-values): G:/Autres ordinateurs/Mon ordinateur/Thèse 2021/Thèse/Résultats/Séquençage/Traité/Script final/GM_Response/output_PR_vs_PNR/maaslin2/Age_Sex_Antibiotics_Response/Phylum/significant_results.tsv
+2025-07-22 14:08:35.894398 INFO::Writing heatmap of significant results to file: G:/Autres ordinateurs/Mon ordinateur/Thèse 2021/Thèse/Résultats/Séquençage/Traité/Script final/GM_Response/output_PR_vs_PNR/maaslin2/Age_Sex_Antibiotics_Response/Phylum/heatmap.pdf
+2025-07-22 14:08:35.986915 INFO::Writing association plots (one for each significant association) to output folder: G:/Autres ordinateurs/Mon ordinateur/Thèse 2021/Thèse/Résultats/Séquençage/Traité/Script final/GM_Response/output_PR_vs_PNR/maaslin2/Age_Sex_Antibiotics_Response/Phylum
+2025-07-22 14:08:35.998812 INFO::Plotting associations from most to least significant, grouped by metadata
+2025-07-22 14:08:36.004827 INFO::Plotting data for metadata number 1, Antibiotics
+2025-07-22 14:08:36.015827 INFO::Creating boxplot for categorical data, Antibiotics vs p__Bacteroidetes
+2025-07-22 14:08:36.139416 INFO::Creating boxplot for categorical data, Antibiotics vs p__Actinobacteria
+2025-07-22 14:08:36.585623 INFO::Plotting data for metadata number 2, Age
+2025-07-22 14:08:36.597434 INFO::Creating scatter plot for continuous data, Age vs p__Verrucomicrobia
